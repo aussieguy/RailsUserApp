@@ -1,0 +1,57 @@
+<div id="users">
+
+<table class="table table-bordered table-striped table-hover table-responsive">
+  <tr>
+    <th><strong>Name</strong></th>
+    <th><strong>Email</strong></th>
+    <th><strong>Project name</strong></th>
+    <th><strong>Apikey</strong></th>
+    <th><strong>Api key provider</strong></th>
+    <th><strong>Edit user details</strong></th> 
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>    
+
+      <% projectFlag = true %>
+      <% @projects.each do |project| %>
+
+        <% if user.projectId.to_i == project.id %>
+          <td><%= project.name %></td>
+          <% projectFlag = false %>
+        <% end %>
+      <% end %>
+      <% if projectFlag %>
+        <td>Not allocated</td>
+      <% end %>
+
+      <% apikeyFlag = true %>
+      <% @apikeys.each do |apikey| %>
+        <% if user.apiKeyId.to_i == apikey.id %>
+          <td><%= apikey.apikey %></td>
+          <td><%= apikey.provider %></td>
+          <% apikeyFlag = false %>
+        <% end %>
+      <% end %>
+      <% if apikeyFlag %>
+        <td>Not allocated</td>
+        <td>Not allocated</td>
+      <% end %>
+
+      <td><div class="button_to">
+            <%= button_to "Edit this user", edit_user_path(user.id), method: "get" %>
+          </div>
+      </td>  
+    </tr>
+  <% end %>
+
+</table>
+</div>
+
+<p>
+<div class="button_to">
+<%= button_to "Create a new user", new_user_path, method: "get" %>
+</div>
+</p>

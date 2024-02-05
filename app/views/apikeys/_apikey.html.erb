@@ -1,0 +1,12 @@
+<div id="<%= dom_id apikey %>">
+<tr>
+    <td><%= apikey.apikey %></td>
+    <td><%= apikey.provider %></td>
+    
+    <td><div class="button_to">
+        <%= button_to "Edit this project", edit_apikey_path(apikey.id), method: "get" %>
+      </div>  
+    </td>
+
+</tr>
+</div>

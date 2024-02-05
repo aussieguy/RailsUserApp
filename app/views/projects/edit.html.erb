@@ -1,0 +1,11 @@
+<h1>Editing <%= @project.name %> project</h1>
+
+<%= render "form", project: @project %>
+
+<br>
+<%= button_to "Delete this project", @project, method: :delete %>
+<br>
+<div>
+  <%= link_to "Back to list of projects", projects_path %>
+
+</div>

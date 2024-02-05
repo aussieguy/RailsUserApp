@@ -1,0 +1,21 @@
+<div id="projects">
+
+<table class="table table-bordered table-striped table-hover table-responsive">
+  <tr>
+    <th><strong>Project name</strong></th>
+    <th><strong>Edit project details</strong></th> 
+  </tr>
+
+  <% @projects.each do |project| %>
+      <%= render project %>
+  <% end %>
+</table>
+</div>
+
+
+<p>
+  <div class="button_to">
+    <%= button_to "Create a new project", new_project_path, method: "get" %>
+  </div>
+</p>
+

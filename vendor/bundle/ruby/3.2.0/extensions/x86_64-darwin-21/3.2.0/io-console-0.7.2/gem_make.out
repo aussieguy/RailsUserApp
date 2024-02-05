@@ -1,0 +1,28 @@
+current directory: /Users/glenhobby/chatai2/vendor/bundle/ruby/3.2.0/gems/io-console-0.7.2/ext/io/console
+/usr/local/opt/ruby/bin/ruby extconf.rb
+checking for rb_io_path()... no
+checking for rb_io_descriptor()... yes
+checking for rb_io_get_write_io()... yes
+checking for rb_io_closed_p()... no
+checking for rb_io_open_descriptor()... no
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+creating Makefile
+
+current directory: /Users/glenhobby/chatai2/vendor/bundle/ruby/3.2.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240130-12457-xuyeoq sitelibdir\=./.gem.20240130-12457-xuyeoq clean
+
+current directory: /Users/glenhobby/chatai2/vendor/bundle/ruby/3.2.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240130-12457-xuyeoq sitelibdir\=./.gem.20240130-12457-xuyeoq
+compiling console.c
+linking shared-object io/console.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/glenhobby/chatai2/vendor/bundle/ruby/3.2.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240130-12457-xuyeoq sitelibdir\=./.gem.20240130-12457-xuyeoq install
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20240130-12457-xuyeoq/io
+
+current directory: /Users/glenhobby/chatai2/vendor/bundle/ruby/3.2.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240130-12457-xuyeoq sitelibdir\=./.gem.20240130-12457-xuyeoq clean

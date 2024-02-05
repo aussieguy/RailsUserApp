@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+<table class="table table-bordered table-striped table-hover table-responsive">
+  <tr>
+    <th><strong>Name:</strong></th>
+    <th><strong>Email:</strong></th>
+    <th><strong>Projectid:</strong></th>
+    <th><strong>Apikeyid:</strong></th>
+  </tr>
+  <tr>
+    <td><%= @user.name %></td>
+    <td><%= @user.email %></td>
+    <td><%= @user.projectId %></td>
+    <td><%= @user.apiKeyId %></td>
+  </tr>
+
+</table>
+
+<div>
+  <%= link_to "Edit this user", edit_user_path(@user) %> |
+  <%= link_to "Back to users", users_path %>
+
+  <%= button_to "Destroy this user", @user, method: :delete %>
+</div>

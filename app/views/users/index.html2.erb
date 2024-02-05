@@ -1,0 +1,27 @@
+
+<div id="users">
+
+<table class="table table-bordered table-striped table-hover table-responsive">
+  <tr>
+    <th><strong>Name:</strong></th>
+    <th><strong>Email:</strong></th>
+    <th><strong>Projectid:</strong></th>
+    <th> <strong>Apikeyid:</strong></th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <%= render user %>
+
+    <div class="button_to">
+      <%= button_to "Edit this user", user_path(user.id), method: "get" %>
+     </div>
+  <% end %>
+
+
+  </div>
+
+<p>
+<div class="button_to">
+<%= button_to "Create a new user", new_user_path, method: "get" %>
+</div>
+</p>

@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped table-hover table-responsive">
+  <tr>
+    <th><strong>Project name:</strong></th>
+  </tr>
+  <tr>
+    <td><%= @project.name %></td>
+  </tr>
+
+</table>
+
+<div>
+  <%= link_to "Edit this project", edit_project_path(@project) %> |
+  <%= link_to "Back to projectss", projects_path %>
+
+  <%= button_to "Destroy this project", @project, method: :delete %>
+</div>
+

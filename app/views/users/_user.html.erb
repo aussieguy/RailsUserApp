@@ -1,0 +1,17 @@
+<div id="<%= dom_id user %>">
+
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+
+    
+    <td><%= user.apiKeyId %></td>
+    <td><div class="button_to">
+          <%= button_to "Edit this user", user_path(user.id), method: "get" %>
+        </div>
+    </td>
+    
+  </tr>
+
+</div>
+

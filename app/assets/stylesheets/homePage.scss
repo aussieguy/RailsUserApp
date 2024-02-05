@@ -1,0 +1,72 @@
+.container {
+    display: inline-grid;
+    grid-template-columns: [col1] 350px [col2] 150px [col3] 50px [col4] 150px [col5] 50px [col6] 150px [col7] 100px;
+    grid-template-rows: [row1] 200px [row2] 150px [row3] 150px [row4] 150px [row5] 150px [row6] 150px;
+}
+
+.buttonUsers {
+    background-color: blue;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 15px, 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0,0.2), 0 8px 16px 0 rgba(0, 0, 0,0.19),;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+
+.textStyle {
+    color: white;
+    font-size: 40px;
+    
+}
+
+.button_to {
+    border-radius: 8px;
+    padding: 15px, 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0,0.2), 0 8px 16px 0 rgba(0, 0, 0,0.19),;
+    width: fit-content;
+}
+
+.buttonProjects {
+    background-color: green;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 15px, 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0,0.2), 0 8px 16px 0 rgba(0, 0, 0,0.19),;
+    grid-column-start: col4;
+    grid-column-end: col5;
+    grid-row-start: row2;
+    grid-row-end: row3;
+
+}
+
+.buttonAPIKeys{
+    background-color: yellow;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 15px, 32px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0,0.2), 0 8px 16px 0 rgba(0, 0, 0,0.19),;
+    grid-column-start: col6;
+    grid-column-end: col7;
+    grid-row-start: row2;
+    grid-row-end: row3;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}

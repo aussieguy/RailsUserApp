@@ -1,0 +1,20 @@
+<div id="Api keys">
+
+<table class="table table-bordered table-striped table-hover table-responsive">
+  <tr>
+    <th><strong>Api key</strong></th>
+    <th><strong>Api key provider</strong></th>
+    <th><strong>Edit project details</strong></th> 
+  </tr>
+
+  <% @apikeys.each do |apikey| %>
+      <%= render apikey %>
+  <% end %>
+</table>
+</div>
+
+<p>
+  <div class="button_to">
+    <%= button_to "Create a new api key", new_apikey_path, method: "get" %>
+  </div>
+</p>
